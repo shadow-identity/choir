@@ -1,7 +1,17 @@
-export const songs = [
+type Song = {
+	name: {
+		full: string
+		short: string
+		icon: string
+	}
+	slug: string
+	parts: { name: string; recording: string }[]
+	copyright?: { composer: string; lyricist: string }
+}
+export const songs: Song[] = [
 	{
 		name: {
-			full: ' What shall we do with the drunken sailor?',
+			full: 'What shall we do with the drunken sailor?',
 			short: 'Drunken Sailor',
 			icon: '⛵',
 		},
@@ -26,9 +36,13 @@ export const songs = [
 	},
 	{
 		name: {
-			full: "Ich brech' die Herzen des stolzesten Frau'n",
+			full: "Ich brech' die Herzen der stolzesten Frau'n",
 			short: "Ich brech' die Herzen",
 			icon: '💔',
+		},
+		copyright: {
+			composer: '1938, Lothar Brühne',
+			lyricist: '1938, Bruno Balz',
 		},
 		slug: 'herzen',
 		parts: [
@@ -52,4 +66,4 @@ export const songs = [
 			{ name: 'B2', recording: 'slatko-b2.mp4' },
 		],
 	},
-] as const
+]

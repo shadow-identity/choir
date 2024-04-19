@@ -37,12 +37,12 @@
 <style>
 	audio {
 		display: block;
+		flex-grow: 1;
 		width: 100%;
 	}
 	figure {
 		display: flex;
-		margin-left: 1rem;
-		margin-right: 1rem;
+		margin: 1rem 0;
 		gap: 1rem;
 		align-items: center;
 	}
