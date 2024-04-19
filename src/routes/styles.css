@@ -1,0 +1,11 @@
+:root {
+	font-family: Inter, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+		'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+		sans-serif;
+
+	text-wrap: balance;
+	text-wrap: pretty;
+	background-color: #f9f9fb;
+	color: #1b1b1b;
+	max-width: 1200px;
+}
