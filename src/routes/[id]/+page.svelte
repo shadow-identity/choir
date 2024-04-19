@@ -8,6 +8,12 @@
 	$: song = songs.find((s) => s.slug === $page.params.id)
 </script>
 
+<svelte:head>
+	{#if song}
+		<title>{song.name.short}</title>
+	{/if}
+</svelte:head>
+
 <main>
 	{#if song}
 		<h2 translate="no">{song.name.icon} {song.name.full}</h2>
