@@ -29,7 +29,9 @@
 		</nav>
 	</header>
 
-	<slot />
+	<div>
+		<slot />
+	</div>
 
 	<footer>
 		{#if composer}<Copyright author={composer} />{/if}
