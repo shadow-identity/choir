@@ -67,7 +67,6 @@
 	}
 	li {
 		display: flex;
-		padding-left: 0.8rem;
 		text-wrap: nowrap;
 	}
 
